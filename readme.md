@@ -27,9 +27,8 @@ Displays the following flags:
 - Fire up ACC, and give it a spin!
 
 ## 3D files included
-- The front of the main box (Lid.stl)
-- The rear cover (Rear.stl)
-- The buttons for printing first Top, bottom and small buttons.stl (Optional)
+- The front of the main box (STLs/Lumirank no LED.stl)
+- The rear cover (STLs/Lumirank - Rear.stl)
 
 [Thingiverse link](https://www.thingiverse.com/thing:4678316) 
 
@@ -37,16 +36,16 @@ Displays the following flags:
 - Nextion 2.8 screen
 - A TTL (Like FTDI232) converter
 - A couple of 4-pin Mini USB or Micro USB cable
-- 4pcs - M3 nuts.
-- 4pcs - M3x16 countersunk screw
+- 4pcs - M3 nuts. (CHANGE)
+- 4pcs - M3x16 countersunk screw (CHANGE)
 - Some wire
 
 ## Instructions for build:
-- Print the lid and rear parts. remove the support material from the side holes.
-- Push m3 nuts into the recesses in the body, glue may be required depending on print but mine did not require any.
+- Print the 3D parts and remove the support material from the side holes.
+- Push heat-inserted nuts with a soldier or specific tool
 - Place the Nextion screen into the lid, with the JST connection at the side opposite the wire hole.
 - If you are using a micro USB cable, chop it close to the micro end, strip it, push it through the hole and resolder the wires. If you are making your own end, wire it. Once the wire is in its intended that a cable tie act as a strain relief, I found mine to be slightly too thick for this, your milage may vary.
-- Solder 4 wires on to the JST connector and wire them up to Arduino:
+- Solder 4 wires on to the JST connector and wire them up to TTL:
 ```
 	Nextion <-> 	TTL
 		5V	-	5V (PIN 3)
@@ -54,7 +53,7 @@ Displays the following flags:
 		RX	-	TX (PIN 5)
 		GND	-	GND (PIN 1)
 ```
-- Stick the TTL down in the box somehwere. Hot glue is nice to attach it to the back of the Nextion screen.
+- Stick the TTL down in the box somehwere. Hot glue is nice to attach it to the back of the Nextion screen. You can put the TTL outside of the case if you wish.
 - Put the lid on and attach with the m3x20mm screws.
 - Optional: Print out the sticker in the PDF file for an extra tenth in your lap times.
 
