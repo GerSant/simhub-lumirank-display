@@ -1,0 +1,100 @@
+{
+  "BindingsEx": {},
+  "RolesEx": {},
+  "ClickActionsEx": {},
+  "HotSpots": [],
+  "PagesMappings": [
+    {
+      "PageName": "readyscreen",
+      "ConditionToPage": {
+        "Expression": null
+      },
+      "InGame": true,
+      "Idle": true,
+      "Skip": false
+    },
+    {
+      "PageName": "blackflag",
+      "ConditionToPage": {
+        "Expression": "[Flag_Black]"
+      },
+      "InGame": true,
+      "Idle": false,
+      "Skip": false
+    },
+    {
+      "PageName": "blueflag",
+      "ConditionToPage": {
+        "Expression": "[Flag_Blue]"
+      },
+      "InGame": true,
+      "Idle": false,
+      "Skip": false
+    },
+    {
+      "PageName": "chequeredflag",
+      "ConditionToPage": {
+        "Expression": "[Flag_Checkered]"
+      },
+      "InGame": true,
+      "Idle": false,
+      "Skip": false
+    },
+    {
+      "PageName": "doubleyellow",
+      "ConditionToPage": {
+        "Expression": "if([DataCorePlugin.CurrentGame]='AssettoCorsaCompetizione',\r\n\tif([Flag_Yellow]=1 & \r\n\t                            \t[GameRawData.Graphics.Flag]='ACC_YELLOW_FLAG' &\r\n\t                            \t[GameRawData.Graphics.globalYellow1]=1 or\r\n\t                            \t[Flag_Yellow]=1 & \r\n\t                            \t[GameRawData.Graphics.Flag]='ACC_YELLOW_FLAG' &[GameRawData.Graphics.globalYellow2]=1 or\r\n\t                            \t[Flag_Yellow]=1 & \r\n\t                            \t[GameRawData.Graphics.Flag]='ACC_YELLOW_FLAG' &[GameRawData.Graphics.globalYellow3]=1,true,false)\r\n,false)"
+      },
+      "InGame": true,
+      "Idle": false,
+      "Skip": false
+    },
+    {
+      "PageName": "greenflag",
+      "ConditionToPage": {
+        "Expression": "if([GameRawData.Graphics.Flag]='ACC_GREEN_FLAG',1,0)"
+      },
+      "InGame": true,
+      "Idle": false,
+      "Skip": false
+    },
+    {
+      "PageName": "sector1",
+      "ConditionToPage": {
+        "Expression": "if([DataCorePlugin.CurrentGame]='AssettoCorsaCompetizione',\r\n\tif([GameRawData.Graphics.globalYellow1]=1 and [GameRawData.Graphics.Flag]='ACC_NO_FLAG' & [Flag_Black]=0 & [Flag_Blue]=0 & [Flag_Checkered]=0 & [Flag_Green]=0 & [Flag_White]=0,\r\n\ttrue,false\r\n\t)\r\n\t\r\n,false)"
+      },
+      "InGame": true,
+      "Idle": false,
+      "Skip": false
+    },
+    {
+      "PageName": "sector2",
+      "ConditionToPage": {
+        "Expression": "if([DataCorePlugin.CurrentGame]='AssettoCorsaCompetizione',\r\n\tif([GameRawData.Graphics.globalYellow2]=1 and [GameRawData.Graphics.Flag]='ACC_NO_FLAG' & [Flag_Black]=0 & [Flag_Blue]=0 & [Flag_Checkered]=0 & [Flag_Green]=0 & [Flag_White]=0,\r\n\ttrue,false\r\n\t)\r\n\t\r\n,false)"
+      },
+      "InGame": true,
+      "Idle": false,
+      "Skip": false
+    },
+    {
+      "PageName": "sector3",
+      "ConditionToPage": {
+        "Expression": "if([DataCorePlugin.CurrentGame]='AssettoCorsaCompetizione',\r\n\tif([GameRawData.Graphics.globalYellow3]=1 and [GameRawData.Graphics.Flag]='ACC_NO_FLAG' & [Flag_Black]=0 & [Flag_Blue]=0 & [Flag_Checkered]=0 & [Flag_Green]=0 & [Flag_White]=0,\r\n\ttrue,false\r\n\t)\r\n\t\r\n,false)"
+      },
+      "InGame": true,
+      "Idle": false,
+      "Skip": false
+    },
+    {
+      "PageName": "whiteflag",
+      "ConditionToPage": {
+        "Expression": "[Flag_White]"
+      },
+      "InGame": true,
+      "Idle": false,
+      "Skip": false
+    }
+  ],
+  "RefreshDelaysEx": {},
+  "VirtualPages": []
+}
